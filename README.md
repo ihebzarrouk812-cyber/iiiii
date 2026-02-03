@@ -131,6 +131,6 @@ p:not(.hidden) {
       btn.textContent = summary.classList.contains('hidden') ? "See My Thoughts" : "MY RIDE OR DIE";
     });
   </script>
-
+</body>
 </body>
 </html>
