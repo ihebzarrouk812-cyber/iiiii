@@ -1,0 +1,136 @@
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J3IFAR AHAHAHAH</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #a7d8f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+h1 {
+  color: #ff4d88;
+  margin-bottom: 20px;
+}
+
+/* IMAGE CENTRÉE */
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.main-image {
+  width: 50%;
+  border-radius: 12px;
+  border: 2px solid #fff;
+}
+
+/* GIFS autour du contour */
+.gif {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  animation: float 3s ease-in-out infinite alternate;
+}
+
+.top-left {
+  top: -15px;
+  left: -15px;
+}
+
+.top-right {
+  top: -15px;
+  right: -15px;
+}
+
+.bottom-left {
+  bottom: -15px;
+  left: -15px;
+}
+
+.bottom-right {
+  bottom: -15px;
+  right: -15px;
+}
+
+/* Animation flottante */
+@keyframes float {
+  0% { transform: translate(0,0); }
+  50% { transform: translate(5px,-5px); }
+  100% { transform: translate(0,0); }
+}
+
+/* BOUTON */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff4d88;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+/* PARAGRAPHE */
+p {
+  display: none;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,0.3);
+  padding: 12px;
+  border-radius: 10px;
+}
+
+p:not(.hidden) {
+  display: block;
+}
+  </style>
+</head>
+<body>
+
+  <h1>✨ ASSOURTI ✨</h1>
+
+  <div class="image-wrapper">
+    <!-- IMAGE CENTRÉE -->
+    <img src="asso.jpg" alt="Photo" class="main-image">
+
+    <!-- GIFS COLLÉS AU CONTOUR -->
+    <img src="gif4.webp" alt="coeur" class="gif top-left">
+    <img src="gif3.gif" alt="princesse" class="gif top-right">
+    <img src="gif2.gif" alt="coeur2" class="gif bottom-left">
+    <img src="gif1.gif" alt="coeur3" class="gif bottom-right">
+  </div>
+
+  <!-- BOUTON ET PARAGRAPHE -->
+  <div class="summary-section">
+    <button id="toggleBtn">See My Thoughts</button>
+    <p id="summary" class="hidden">
+      🌟 I knew that i loved you when i start thinking about my words and my actions,Assourti,you have a magical vibe and i like it,and there's nothing better than a stunning gril with a talent and ambition ! NHABK BARSHA ASSOURTI✨
+    </p>
+  </div>
+
+  <script>
+    const btn = document.getElementById('toggleBtn');
+    const summary = document.getElementById('summary');
+
+    btn.addEventListener('click', () => {
+      summary.classList.toggle('hidden');
+      btn.textContent = summary.classList.contains('hidden') ? "See My Thoughts" : "MY RIDE OR DIE";
+    });
+  </script>
+
+</body>
+</html>
