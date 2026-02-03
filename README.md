@@ -3,7 +3,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>J3IFAR AHAHAHAH</title>
-  <style>
+</head>
+<body>
+ <style>
     body {
   font-family: Arial, sans-serif;
   background-color: #a7d8f4;
@@ -98,9 +100,6 @@ p:not(.hidden) {
   display: block;
 }
   </style>
-</head>
-<body>
-
   <h1>✨ ASSOURTI ✨</h1>
 
   <div class="image-wrapper">
@@ -131,6 +130,6 @@ p:not(.hidden) {
       btn.textContent = summary.classList.contains('hidden') ? "See My Thoughts" : "MY RIDE OR DIE";
     });
   </script>
-</body>
+
 </body>
 </html>
